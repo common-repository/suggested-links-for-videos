@@ -1,0 +1,52 @@
+.suggested_links_table{
+    width: 100%;
+}
+.suggested_links_table td{
+    width: 100%;
+    display: block;
+}
+.suggested-links-app{
+    padding: 20px 0;
+}
+.suggestion-box{
+    margin: 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestion-box:last-child{
+    margin: 0;
+}
+.suggestion-box div{
+    width: calc(33.33% - 10px);
+    margin: 0 5px;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: inline-block;
+    overflow: hidden;
+    max-height: 20px;
+    color: #444;
+}
+.suggestion-box div:empty:before {
+    content: attr(data-placeholder);
+}
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+    display: none !important;
+}
+.suggestion-box span{
+    cursor: pointer;
+    display: flex;
+}
+.suggestion-box span svg{
+    transform: scale(0.5);
+    fill: #e63946;
+}
+#send_suggestion_data{
+    margin: 0 0 20px 20px !important;
+}
+.suggestion-saved{
+    color: #008a20;
+    margin-left: 20px;
+}
